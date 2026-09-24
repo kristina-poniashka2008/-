@@ -27,3 +27,17 @@ h1 {
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+/* Экран калькулятора — дисплей для магии чисел */
+#calculator-screen {
+    background-color: #fff0f5;
+    color: #d63384;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #ffb3de;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
