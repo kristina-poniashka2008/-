@@ -41,3 +41,28 @@ h1 {
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
+/* Сетка для кнопок калькулятора */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Красивые кнопочки-поняшки */
+.btn {
+    background-color: #fff0f5;
+    color: #ff66b2;
+    border: 2px solid #ffb3de;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Эффект при наведении мышкой на кнопочку */
+.btn:hover {
+    background-color: #ffb3de;
+    color: #ffffff;
+}
