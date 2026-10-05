@@ -66,3 +66,15 @@ h1 {
     background-color: #ffb3de;
     color: #ffffff;
 }
+/* Особый стиль для кнопки равно (=) */
+.btn.equal {
+    background-color: #ff66b2;
+    color: #ffffff;
+    border: 2px solid #d63384;
+    grid-column: span 3; /* Делаем кнопку широкой на всю строку */
+}
+
+/* Эффект при наведении на кнопку равно */
+.btn.equal:hover {
+    background-color: #d63384;
+}
