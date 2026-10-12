@@ -7,3 +7,9 @@ function appendToScreen(value) {
         screen.innerText += value;
     }
 }
+
+// Функция, которая очищает экран и сбрасывает значение до 0
+function clearScreen() {
+    const screen = document.getElementById('calculator-screen');
+    screen.innerText = '0';
+}
