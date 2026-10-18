@@ -47,3 +47,34 @@ function setOperation(op) {
     operation = op;
     currentInput = '0';
 }
+// Функция для вычисления результата при нажатии на "="
+function calculate() {
+    const screen = document.getElementById('calculator-screen');
+    if (operation === null || previousInput === '') return;
+    
+    let result;
+    const prev = parseFloat(previousInput);
+    const current = parseFloat(currentInput);
+    
+    switch (operation) {
+        case '+':
+            result = prev + current;
+            break;
+        case '-':
+            result = prev - current;
+            break;
+        case '*':
+            result = prev * current;
+            break;
+        case '/':
+            result = current === 0 ? 'Ошибка' : prev / current;
+            break;
+        default:
+            return;
+    }
+    
+    screen.innerText = result;
+    currentInput = result.toString();
+    previousInput = '';
+    operation = null;
+}
