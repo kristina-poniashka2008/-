@@ -78,3 +78,13 @@ h1 {
 .btn.equal:hover {
     background-color: #d63384;
 }
+/* Дополнительные эффекты для кнопок */
+.btn.operator:hover {
+    background-color: #ff99cc;
+    transform: scale(1.05);
+}
+
+.btn.equal:hover {
+    background-color: #ff3385;
+    transform: scale(1.05);
+}
