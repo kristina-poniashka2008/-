@@ -103,3 +103,8 @@ h1 {
     transform: scale(0.95);
     background-color: #ffb3de;
 }
+/* Добавляем мягкую тень и градиент для карточки калькулятора */
+.calculator {
+    background: linear-gradient(135deg, #ffe6f2, #fff0f5);
+    box-shadow: 0 10px 25px rgba(255, 102, 178, 0.2);
+}
