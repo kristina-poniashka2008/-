@@ -131,3 +131,14 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+/* Базовый стиль для всех кнопок калькулятора */
+.btn {
+    background-color: #ffb3de;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #4a4a4a;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
