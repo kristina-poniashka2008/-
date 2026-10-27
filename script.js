@@ -78,3 +78,11 @@ function calculate() {
     previousInput = '';
     operation = null;
 }
+// Функция для удаления последнего введенного символа
+function deleteChar() {
+    const screen = document.getElementById('calculator-screen');
+    currentInput = currentInput.toString().slice(0, -1);
+    screen.innerText = currentInput === '' ? '0' : currentInput;
+}
+
+
