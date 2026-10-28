@@ -1,18 +1,3 @@
-// Функция, которая выводит текст на экран калькулятора
-function appendToScreen(value) {
-    const screen = document.getElementById('calculator-screen');
-    if (screen.innerText === '0') {
-        screen.innerText = value;
-    } else {
-        screen.innerText += value;
-    }
-}
-
-// Функция, которая очищает экран и сбрасывает значение до 0
-function clearScreen() {
-    const screen = document.getElementById('calculator-screen');
-    screen.innerText = '0';
-}
 // Переменные для хранения текущего числа, предыдущего и выбранного оператора
 let currentInput = '0';
 let previousInput = '';
@@ -41,12 +26,12 @@ function clearScreen() {
 
 // Функция для обработки нажатия на операторы (+, -, *, /)
 function setOperation(op) {
-    const screen = document.getElementById('calculator-screen');
     if (operation !== null) calculate();
     previousInput = currentInput;
     operation = op;
     currentInput = '0';
 }
+
 // Функция для вычисления результата при нажатии на "="
 function calculate() {
     const screen = document.getElementById('calculator-screen');
@@ -78,6 +63,7 @@ function calculate() {
     previousInput = '';
     operation = null;
 }
+
 // Функция для удаления последнего введенного символа
 function deleteChar() {
     const screen = document.getElementById('calculator-screen');
